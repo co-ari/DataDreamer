@@ -1,19 +1,37 @@
-[tool.poetry]
+[project]
+authors = [
+    {name = "Ajay Patel", email = "me@ajayp.app"},
+]
+maintainers = [
+    {name = "Ajay Patel", email = "me@ajayp.app"},
+]
+license = {text = "MIT"}
+requires-python = "<3.14,>=3.10"
+dependencies = []
 name = "DataDreamer"
 version = "0.38.0"
 description = "Prompt. Generate Synthetic Data. Train & Align Models."
-license = "MIT"
-authors= [
-    "Ajay Patel <me@ajayp.app>"
-]
-maintainers = [
-    "Ajay Patel <me@ajayp.app>"
-]
 readme = "README.md"
-homepage = "https://datadreamer.dev/"
-repository = "https://github.com/datadreamer-dev/DataDreamer"
-documentation = "https://datadreamer.dev/docs/"
-keywords = ["python", "nlp", "machine learning", "natural language processing", "deep learning", "transformers", "pytorch", "openai", "alignment", "gpt", "nlp library", "synthetic data", "fine-tuning", "synthetic dataset generation", "llm", "llms", "llmops", "instruction-tuning"]
+keywords = [
+    "python",
+    "nlp",
+    "machine learning",
+    "natural language processing",
+    "deep learning",
+    "transformers",
+    "pytorch",
+    "openai",
+    "alignment",
+    "gpt",
+    "nlp library",
+    "synthetic data",
+    "fine-tuning",
+    "synthetic dataset generation",
+    "llm",
+    "llms",
+    "llmops",
+    "instruction-tuning",
+]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",
@@ -27,17 +45,13 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
-    "Topic :: Scientific/Engineering :: Artificial Intelligence"
-]
-packages = [
-    {include = "datadreamer"}
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
 ]
 
-[tool.poetry.dependencies]
-python = ">=3.10,<3.14"
-
-[tool.poetry.group.dev.dependencies]
-poetry = "1.4.2"
+[project.urls]
+homepage = "https://datadreamer.dev/"
+repository = "https://github.com/datadreamer-dev/DataDreamer"
+documentation = "https://datadreamer.dev/docs/"
 
 [tool.ruff]
 extend-exclude = ["docs"]
